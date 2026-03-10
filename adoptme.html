@@ -4,9 +4,10 @@
   <head>
     <title>Adopt Me</title>
     <link rel="stylesheet" href="adoptme.css">
+    <script src="adoptme.js"></script>
   </head>
   <body>
-    <form>
+    <form name="adoptme">
       <p>ข้อมูลส่วนตัวผู้สนใจรับอุปการะสุนัข</p>
       <label for="firstName">First Name:</label>
       <input type="text" id="firstName" name="firstName" required />
@@ -17,7 +18,7 @@
       <br>
 
       <label for="tel">Phone Number:</label>
-      <input type="tel" id="tel" name="tel" />
+      <input type="tel" id="tel" name="tel" required/>
       <br>
 
       <label for="email">Email:</label>
@@ -47,7 +48,7 @@
       <br>
 
       <label for="petcount">จำนวนสัตว์เลี้ยงที่มีอยู่ปัจจุบัน:</label>
-      <input type="number" id="petcount" name="petcount" min="0" />
+      <input type="number" id="petcount" name="petcount" />
       <br>
 
       <input type="checkbox" id="agree" />
@@ -56,7 +57,7 @@
       </label>
 
       <br>
-      <input type="submit" value="ส่งแบบฟอร์ม" />
+      <input type="submit" value="ส่งแบบฟอร์ม" onclick="return recheck() ;" />
     </form>
 
     <p style="text-align: center">6833083521 ณัฐณิชา อินทอง</p>
